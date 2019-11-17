@@ -1,0 +1,21 @@
+.to-do-input-wrapper {
+  width: 100vw;
+  .to-do-input {
+    display: block;
+    margin: auto;
+    width: 70vw;
+    height: 4vh;
+    font-size: 16px;
+  }
+}
+.to-do-input-button {
+  display: block;
+  color: white;
+  width: 8vw;
+  height: 4vh;
+  background-color: black;
+  margin: 1vh auto;
+  &:hover {
+    cursor: pointer;
+  }
+}

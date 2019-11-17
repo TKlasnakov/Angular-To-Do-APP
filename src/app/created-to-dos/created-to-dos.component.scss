@@ -1,0 +1,23 @@
+.created-to-dos {
+  width: 100vw;
+  .to-do-item {
+    width: 40vw;
+    height: 10vh;
+    margin: 10px auto;
+    display: flex;
+    background-color: #F1F1F0;
+    &__id {
+      min-width: 10%;
+      background-color: #5BC0DE;
+      color: #fff;
+      font-size: 50px;
+      margin: auto 10px;
+      border-radius: 5px;
+      text-align: center;
+    }
+    &__content {
+      margin: auto 10px;
+      max-width: 90%;
+    }
+  }
+}

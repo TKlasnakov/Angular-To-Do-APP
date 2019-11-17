@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Output} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-to-do';
+  @Output() createdToDo;
+  toDos = [];
+
+  createToDo(item) {
+    const toDoInfo = {
+      value: item,
+      id: this.toDos.length + 1
+    };
+    this.toDos.push(toDoInfo);
+  }
 }
